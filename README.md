@@ -1,16 +1,16 @@
 # Vertcoin docker image
 
-[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-vertcoin/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-vertcoin)
+This is unofficial Vertcoin docker image.
+
+It is being used internally at Coin Metrics, and is published in the hope it will be useful, but without any warranty. No support is available. You are using it at your own risk.
 
 ## Using image
+
+[![Docker Repository on Quay](https://quay.io/repository/coinmetrics/fullnode-vertcoin/status "Docker Repository on Quay")](https://quay.io/repository/coinmetrics/fullnode-vertcoin)
 
 ```
 docker pull quay.io/coinmetrics/fullnode-vertcoin:<version>
 ```
-
-## Support
-
-This image is being used internally at Coin Metrics. No support is available. You are using it at your own risk.
 
 ## Security
 
