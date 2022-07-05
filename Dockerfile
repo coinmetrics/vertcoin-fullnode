@@ -5,16 +5,16 @@ RUN set -ex; \
 	apt-get install -y --no-install-recommends \
 		ca-certificates \
 		curl \
-		unzip \
 	; \
 	rm -rf /var/lib/apt/lists/*
 
 ARG VERSION
 
 RUN set -ex; \
-	curl -L -o /root/vertcoind.zip https://github.com/vertcoin-project/vertcoin-core/releases/download/${VERSION}/vertcoind-v${VERSION}-linux-amd64.zip; \
-	unzip -d /usr/bin /root/vertcoind.zip; \
-	rm /root/vertcoind.zip
+    curl -L -o /root/vertcoind.tar.gz https://github.com/vertcoin-project/vertcoin-core/releases/download/$(VERSION}/vertcoin-$(VERSION}-x86_64-linux-gnu.tar.gz ; \
+    cd /usr; \
+    tar --strip-components=1 -xf /root/vertcoin.tar.gz; \
+	rm /root/vertcoin.tar.gz
 
 RUN useradd -m -u 1000 -s /bin/bash runner
 USER runner
