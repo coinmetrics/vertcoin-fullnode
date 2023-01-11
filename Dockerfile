@@ -11,7 +11,7 @@ RUN set -ex; \
 ARG VERSION
 
 RUN set -ex; \
-    curl -L -o /root/vertcoin.tar.gz https://github.com/vertcoin-project/vertcoin-core/releases/download/${VERSION}/vertcoin-${VERSION}-x86_64-linux-gnu.tar.gz ; \
+    curl -L -o /root/vertcoin.tar.gz https://github.com/vertcoin-project/vertcoin-core/releases/download/v${VERSION}/vertcoin-${VERSION}-x86_64-linux-gnu.tar.gz ; \
     cd /usr; \
     tar --strip-components=1 -xf /root/vertcoin.tar.gz; \
 	rm /root/vertcoin.tar.gz
